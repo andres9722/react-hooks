@@ -1,0 +1,19 @@
+@import "../Shared/variables.scss";
+@import "../Shared/typography.scss";
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: calc(100vh - 93px);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: 48px;
+    }
+  }
+}

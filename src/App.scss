@@ -1,0 +1,10 @@
+@import "./components/Shared/variables.scss";
+
+.app {
+  background: color(white);
+  
+  .header {
+    background: color(primary);
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../Shared/variables.scss";
+@import "../Shared/typography.scss";
+
+.nav {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+
+  .menu {
+    display: grid;
+    height: 50%;
+    width: 100%;
+
+    &__item {
+      padding: 0 16px;
+      align-self: center;
+      justify-self: center;
+      background: color(primary);
+    }
+
+    &__link {
+      font-size: 24px;
+      color: color(white);
+    }
+  }
+}

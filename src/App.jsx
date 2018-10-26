@@ -1,30 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+import Routes from './components/Utils/Routes'
+import './App.scss'
+import Title from './components/Title/Title'
 
 const App = () => {
-  let id = 0
-  const [todos, setTodos] = useState([{ text: 'Learn hooks', id }])
-
-  const handleOnAddTask = e => {
-    let form = e.target
-    e.preventDefault()
-    setTodos(todos.concat({ text: form.text.value, id: ++id }))
-    form.reset()
-  }
-
-  useEffect(() => {
-    document.title = `😄 ${todos[todos.length - 1].text} 😄`
-  })
-
   return (
-    <div className='App'>
-      <form onSubmit={handleOnAddTask}>
-        <input placeholder='text' type='text' name='text' id='text' />
-      </form>
-      <ul>
-        {todos.map(todo => <li key={todo.text}> {todo.text} 😄 </li>)}
-      </ul>
-    </div>
+    <Router>
+      <div className='app'>
+        <header className='header'>
+          <Link to='/'>
+            <Title theme='light'> react hooks </Title>
+          </Link>
+        </header>
+        <Routes />
+      </div>
+    </Router>
   )
 }
 

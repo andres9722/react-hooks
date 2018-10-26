@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: color(primary);
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-family: $font-text;
+  color: color(font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.l-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

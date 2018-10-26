@@ -1,0 +1,13 @@
+@import "../Shared/variables.scss";
+@import "../Shared/typography.scss";
+
+.title {
+  color: color(primary);
+  border-bottom: 1px solid color(border-color);
+  padding: 8px;
+  font-size: 48px;
+
+  &--light {
+    color: color(white);
+  }
+}
