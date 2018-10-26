@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 
 const App = () => {
@@ -12,13 +12,17 @@ const App = () => {
     form.reset()
   }
 
+  useEffect(() => {
+    document.title = `😄 ${todos[todos.length - 1].text} 😄`
+  })
+
   return (
     <div className='App'>
       <form onSubmit={handleOnAddTask}>
         <input placeholder='text' type='text' name='text' id='text' />
       </form>
       <ul>
-        {todos.map(todo => <li key={todo.text}> {todo.text}😄 </li>)}
+        {todos.map(todo => <li key={todo.text}> {todo.text} 😄 </li>)}
       </ul>
     </div>
   )
