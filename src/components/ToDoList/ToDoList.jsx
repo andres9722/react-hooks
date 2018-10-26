@@ -14,6 +14,7 @@ const ToDoList = () => {
   useEffect(() => {
     document.title = `😄 ${todos[todos.length - 1].text} 😄`
   })
+
   return (
     <div>
       <form onSubmit={handleOnAddTask}>

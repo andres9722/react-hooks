@@ -8,9 +8,14 @@
 
   .content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+
+    }
 
     &__text {
       font-size: 48px;
