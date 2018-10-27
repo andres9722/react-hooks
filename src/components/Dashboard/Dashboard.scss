@@ -12,9 +12,17 @@
     align-items: center;
 
     &__logo {
-      display: flex;
-      justify-content: center;
+      animation: rotate 30s infinite linear;
 
+      @keyframes rotate {
+        to {
+          transform: rotate(0);
+        }
+
+        from {
+          transform: rotate(360deg);
+        }
+      }
     }
 
     &__text {

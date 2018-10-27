@@ -10,18 +10,40 @@
   .menu {
     display: grid;
     height: 50%;
-    width: 100%;
-
+    width: inherit;
+    
     &__item {
       padding: 0 16px;
       align-self: center;
       justify-self: center;
       background: color(primary);
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: lighten(color(primary), 10);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .3s cubic-bezier(.54, .11, .24, 1.3);
+      }
+
+      &:hover {
+        &::before {
+          transform: scaleX(1);
+        }
+      }
     }
 
     &__link {
       font-size: 24px;
       color: color(white);
+      position: relative;
+      z-index: 1;
     }
   }
 }
