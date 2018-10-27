@@ -3,6 +3,8 @@ $small: 320px;
 $medium: 640px;
 $large: 1024px;
 
+$easing: cubic-bezier(.54, .11, .24, 1.3);
+
 $colors: (
   primary: #24292E, 
   secondary: #3F4448,

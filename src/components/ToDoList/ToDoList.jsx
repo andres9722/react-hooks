@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './ToDoList.scss'
 
 const ToDoList = () => {
   let id = 0
@@ -12,16 +13,25 @@ const ToDoList = () => {
   }
 
   useEffect(() => {
-    document.title = `😄 ${todos[todos.length - 1].text} 😄`
+    document.title = `${todos[todos.length - 1].text} 😄`
   })
 
   return (
-    <div>
-      <form onSubmit={handleOnAddTask}>
-        <input placeholder='text' type='text' name='text' id='text' />
+    <div className='todo'>
+      <form className='todo-form' onSubmit={handleOnAddTask}>
+        <input
+          className='todo-form__input'
+          placeholder='text'
+          type='text'
+          name='text'
+          id='text'
+          autoComplete='off'
+        />
       </form>
-      <ul>
-        {todos.map(todo => <li key={todo.text}> {todo.text} 😄 </li>)}
+      <ul className='todo-list'>
+        {todos.map(todo => (
+          <li className='todo-list__item' key={todo.text}> 😄 - {todo.text}</li>
+        ))}
       </ul>
     </div>
   )

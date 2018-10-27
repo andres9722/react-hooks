@@ -1,0 +1,31 @@
+@import "../Shared/variables.scss";
+@import "../Shared/typography.scss";
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
+  &-form {
+    width: inherit;
+
+    &__input {
+      width: 500px;
+      padding: 8px 12px;
+      font-family: $font-text;
+      outline: none;
+    }
+  }
+
+  &-list {
+    margin-top: 32px;
+
+    &__item {
+      padding: 8px;
+      border-bottom: 1px solid color(border-color);
+      margin-bottom: 8px;
+    }
+  }
+}
