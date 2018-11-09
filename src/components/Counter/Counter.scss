@@ -1,0 +1,14 @@
+@import '../Shared/variables.scss';
+@import '../Shared/typography.scss';
+
+.counter {
+  &__button {
+    border: 1px solid color(border-color);
+    background: color(white);
+    font-size: 32px;
+    padding: 8px 16px;
+    color: color(font-color);
+    outline: none;
+    box-shadow: 1px 1px 1px color(border-color);
+  }
+}

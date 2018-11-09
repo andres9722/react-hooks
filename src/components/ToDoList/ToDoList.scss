@@ -1,12 +1,11 @@
-@import "../Shared/variables.scss";
-@import "../Shared/typography.scss";
+@import '../Shared/variables.scss';
+@import '../Shared/typography.scss';
 
 .todo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
 
   &-form {
     width: inherit;
@@ -24,7 +23,6 @@
 
     &__item {
       padding: 8px;
-      border-bottom: 1px solid color(border-color);
       margin-bottom: 8px;
     }
   }

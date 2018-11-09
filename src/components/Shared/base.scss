@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -14,7 +16,12 @@ body {
   color: color(font-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -39,3 +46,17 @@ p {
   margin: 0 auto;
 }
 
+.section {
+  padding: 16px 0;
+  border-bottom: 1px solid color(border-color);
+  margin-top: 16px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__title {
+    text-transform: lowercase;
+    font-size: 42px;
+  }
+}

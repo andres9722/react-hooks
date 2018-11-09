@@ -17,7 +17,8 @@ const ToDoList = () => {
   })
 
   return (
-    <div className='todo'>
+    <div className='section'>
+      <h1 className='section__title'>Todo List</h1>
       <form className='todo-form' onSubmit={handleOnAddTask}>
         <input
           className='todo-form__input'

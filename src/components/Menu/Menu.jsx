@@ -6,7 +6,7 @@ const Menu = () => (
   <nav className='nav'>
     <ul className='menu'>
       <li className='menu__item'>
-        <Link className='menu__link' to='/todos'>use state hook</Link>
+        <Link className='menu__link' to='/state-hook'>use state hook</Link>
       </li>
       <li className='menu__item'>
         <Link className='menu__link' to='/state'>
