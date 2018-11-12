@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Routes from './components/Utils/Routes'
-import './App.scss'
 import Title from './components/Title/Title'
+import './App.scss'
 
 const App = () => {
   useEffect(() => {

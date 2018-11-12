@@ -56,7 +56,12 @@ p {
   }
 
   &__title {
-    text-transform: lowercase;
     font-size: 42px;
+    text-transform: lowercase;
+  }
+
+  &__description {
+    display: block;
+    margin-bottom: 16px;
   }
 }

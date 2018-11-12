@@ -4,6 +4,7 @@
 .counter {
   &__button {
     border: 1px solid color(border-color);
+    border-radius: 2px;
     background: color(white);
     font-size: 32px;
     padding: 8px 16px;

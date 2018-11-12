@@ -3,13 +3,11 @@ import Counter from '../Counter/Counter'
 import ToDoList from '../ToDoList/ToDoList'
 import './StateHooks.scss'
 
-const StateHooks = () => {
-  return (
-    <div className='state-hooks l-container'>
-      <Counter />
-      <ToDoList />
-    </div>
-  )
-}
+const StateHooks = () => (
+  <div className='state-hooks l-container'>
+    <Counter />
+    <ToDoList />
+  </div>
+)
 
 export default StateHooks

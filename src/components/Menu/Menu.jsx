@@ -9,12 +9,12 @@ const Menu = () => (
         <Link className='menu__link' to='/state-hook'>use state hook</Link>
       </li>
       <li className='menu__item'>
-        <Link className='menu__link' to='/state'>
+        <Link className='menu__link' to='/custom-hook'>
           state custom hooks
         </Link>
       </li>
       <li className='menu__item'>
-        <Link className='menu__link' to='/effect'>use effect hook</Link>
+        <Link className='menu__link' to='/use-effect'>use effect hook</Link>
       </li>
       <li className='menu__item'>
         <Link className='menu__link' to='/memo'>react memo</Link>
