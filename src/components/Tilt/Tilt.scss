@@ -1,0 +1,25 @@
+@import '../Shared/variables.scss';
+
+.tilt-root {
+  width: 250px;
+  height: 250px;
+  padding: 16px;
+  background-color: color(green);
+  margin: 16px auto;
+  color: color(white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: darken(color(green), 5);
+  }
+}
+
+.tilt-child {
+  font-size: 28px;
+  padding: 8px 12px;
+  border: 2px solid color(white);
+}

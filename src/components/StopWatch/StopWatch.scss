@@ -1,0 +1,30 @@
+@import '../Shared/variables.scss';
+@import '../Shared/typography.scss';
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__lapse {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    font-family: $font-text;
+    border: 1px solid color(border-color);
+    background-color: transparent;
+    padding: 16px 32px;
+    width: auto;
+    margin-bottom: 16px;
+    font-size: 48px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(color(border-color), 8%);
+    }
+  }
+}
