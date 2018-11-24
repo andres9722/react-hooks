@@ -37,7 +37,7 @@ const StopWatchUseReducerSimplify = () => {
 
   return (
     <div className='watch section'>
-      <h1 className='section__title'>StopWatch UseReducer</h1>
+      <h1 className='section__title'>StopWatch UseReducer simplify</h1>
       <span className='watch__lapse'> {lapse}ms </span>
       <button onClick={handleRunClick} className='watch__button'>
         {running ? 'Stop' : 'Start'}
