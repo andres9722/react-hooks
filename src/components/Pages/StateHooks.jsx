@@ -4,6 +4,8 @@ import ToDoList from '../ToDoList/ToDoList'
 import './StateHooks.scss'
 import StopWatch from '../StopWatch/StopWatch'
 import StopWatchUseReducer from '../StopWatchUseReducer/StopWatchUseReducer'
+import StopWatchUseReducerSimplify
+  from '../StopWatchUseReducerSimplify/StopWatchUseReducerSimplify'
 
 const StateHooks = () => (
   <div className='state-hooks l-container'>
@@ -11,6 +13,7 @@ const StateHooks = () => (
     <ToDoList />
     <StopWatch />
     <StopWatchUseReducer />
+    <StopWatchUseReducerSimplify />
   </div>
 )
 
