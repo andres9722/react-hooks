@@ -31,6 +31,7 @@ const StopWatch = () => {
 
   return (
     <div className='watch section'>
+      <h1 className='section__title'>StopWatch</h1>
       <span className='watch__lapse'> {lapse}ms </span>
       <button onClick={handleRunClick} className='watch__button'>
         {running ? 'Stop' : 'Start'}
